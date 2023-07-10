@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- Navbar and burger menu ------------------ */
+nav {
+    width: 100%;
+    height: 5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.burger-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 2em;
+    height: 0.5em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.5em;
+}
+.r2style {
+
+    color: white;
+    margin-right: 5%;
+}
+
+
+.options{
+    font-size: 40px;
+}
+
+.menu {
+    width: 20%;
+    height: 85%;
+    background-color: rgb(184, 185, 187);
+    box-shadow: inset 0 rgb(255, 255, 255),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    position: absolute;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.menu:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ------------- sliding menu ------------------ */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+
+
+.tabsContainer {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    height: 120px;
+    margin-top: -50px;
+    overflow: hidden;
+    justify-content: space-between;
+    grid-template-columns: "repeat(auto-fit, minmax(150px, 1fr))";
+}
+
+
+
+h5 {
+    font-weight: 400;
+    color: black;
+    white-space: nowrap;
+}
+
+.tab:hover {
+    color: #4f4f4f;
+    scale: 1.01;
+}
+.options:hover {
+    color: #4f4f4f;
+    scale: 1.01;
+}
+
+.tab {
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+h6{
+    cursor: pointer;
+}
+
+.h5 {
+    border-bottom: 2px solid rgb(215, 215, 215);
+}
+
+.h5-active {
+    border-bottom: 2px solid black;
+}
+
+.activeTab {
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Styles for the tab container on phone screens */
+    .r2style {
+
+        font-size: 20px;
+        margin-right: 10%;
+    }
+
+    .options {
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+
+    /* Styles for the tab container on phone screens */
+    .tabsContainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tab {
+        margin-bottom: 5px;
+    }
+
+    .menu {
+        width: 40%;
+    }
+
+    /* Styles for the tabs on phone screens */
+}

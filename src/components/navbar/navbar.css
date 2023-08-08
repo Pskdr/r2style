@@ -40,7 +40,7 @@ nav {
 }
 
 .menu {
-    width: 20%;
+    width: 35%;
     height: 85%;
     background-color: rgb(184, 185, 187);
     box-shadow: inset 0 rgb(255, 255, 255),
@@ -125,10 +125,13 @@ h5 {
 
 h6{
     cursor: pointer;
+    margin-top: 10px;
+    color: white;
 }
 
 .h5 {
     border-bottom: 2px solid rgb(215, 215, 215);
+    font-size: 20px;
 }
 
 .h5-active {
@@ -167,8 +170,11 @@ h6{
     }
 
     .menu {
-        width: 40%;
+        width: 50%;
     }
 
+    .h5 {
+        font-size: 13px;
+    }
     /* Styles for the tabs on phone screens */
 }

@@ -26,6 +26,7 @@ const Navbar = ({ setMostrar, mostrar, steps }) => {
     padding: '20px',
     marginBottom: '20px',
     justifyContent: 'center',
+    margin: 'auto',
   };
   const [select, setSelect] = useState(0);
   const [colection, setColection] = useState(0);

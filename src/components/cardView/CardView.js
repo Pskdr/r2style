@@ -41,24 +41,44 @@ function CardView(props) {
           maxHeight: '300px',
         }}
       />
-      <div>
-        {verMas ? (
-          <div>
-            <p
-              style={{
-                marginBottom: '10px',
-                whiteSpace: 'pre-wrap',
-                minHeight: 'auto',
-              }}
-            >
-              {props.description}
-            </p>
 
+      {props.description === '' ? null : (
+        <div>
+          {verMas ? (
+            <div>
+              <p
+                style={{
+                  marginBottom: '10px',
+                  whiteSpace: 'pre-wrap',
+                  minHeight: 'auto',
+                }}
+              >
+                {props.description}
+              </p>
+
+              <h7
+                onClick={onVerMas}
+                style={{
+                  color: '#000',
+                  border: 'none',
+                  fontWeight: 'bold',
+                  textDecoration: 'underline',
+                  borderRadius: '5px',
+                  cursor: 'pointer',
+                  margin: 'auto',
+                  justifyContent: 'center',
+                }}
+              >
+                Ocultar
+              </h7>
+            </div>
+          ) : (
             <h7
               onClick={onVerMas}
               style={{
-                color: '#0062ff',
+                color: '#000',
                 border: 'none',
+                fontWeight: 'bold',
                 textDecoration: 'underline',
                 borderRadius: '5px',
                 cursor: 'pointer',
@@ -66,26 +86,11 @@ function CardView(props) {
                 justifyContent: 'center',
               }}
             >
-              Ocultar
+              Ver descripción
             </h7>
-          </div>
-        ) : (
-          <h7
-            onClick={onVerMas}
-            style={{
-              color: '#0062ff',
-              border: 'none',
-              textDecoration: 'underline',
-              borderRadius: '5px',
-              cursor: 'pointer',
-              margin: 'auto',
-              justifyContent: 'center',
-            }}
-          >
-            Ver descripción
-          </h7>
-        )}
-      </div>
+          )}
+        </div>
+      )}
       <p
         style={{
           fontWeight: 'bold',

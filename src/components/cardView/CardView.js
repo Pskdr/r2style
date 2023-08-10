@@ -38,7 +38,7 @@ function CardView(props) {
           width: '100%',
           marginBottom: '10px',
           maxWidth: '200px',
-          maxHeight: '250px',
+          maxHeight: '290px',
         }}
       />
 

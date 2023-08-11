@@ -28,8 +28,8 @@ const Navbar = ({ setMostrar, mostrar, steps }) => {
     justifyContent: 'center',
     margin: 'auto',
   };
-  const [select, setSelect] = useState(0);
-  const [colection, setColection] = useState(0);
+  const [select, setSelect] = useState(1);
+  const [colection, setColection] = useState(1);
   const handleClick = (selected) => {
     setSelect(selected);
     setMostrar(selected);

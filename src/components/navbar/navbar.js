@@ -49,6 +49,17 @@ const Navbar = ({ setMostrar, mostrar, steps }) => {
           <div className={burger_class}></div>
         </div>
 
+        <h2
+          style={{
+            marginTop: '10px',
+            marginLeft: '20px',
+            position: 'relative',
+            color: 'rgba(236, 226, 226, 0.5)',
+          }}
+        >
+          MENU
+        </h2>
+
         <h1
           style={{
             padding: '5px',

@@ -28,8 +28,8 @@ const Navbar = ({ setMostrar, mostrar, steps }) => {
     justifyContent: 'center',
     margin: 'auto',
   };
-  const [select, setSelect] = useState(1);
-  const [colection, setColection] = useState(1);
+  const [select, setSelect] = useState(0);
+  const [colection, setColection] = useState(0);
   const handleClick = (selected) => {
     setSelect(selected);
     setMostrar(selected);
@@ -49,16 +49,7 @@ const Navbar = ({ setMostrar, mostrar, steps }) => {
           <div className={burger_class}></div>
         </div>
 
-        <h2
-          style={{
-            marginTop: '10px',
-            marginLeft: '20px',
-            position: 'relative',
-            color: 'rgba(236, 226, 226, 0.5)',
-          }}
-        >
-          MENU
-        </h2>
+        <p className='menuName'>MENU</p>
 
         <h1
           style={{
@@ -79,7 +70,7 @@ const Navbar = ({ setMostrar, mostrar, steps }) => {
         <div className='options' onClick={() => handleColeccion(1)}>
           <h6 style={{ marginLeft: '20px' }}>COLECCIONES</h6>
         </div>
-        {colection === 1 ? (
+        {colection === 0 ? (
           <div>
             <div className={`tab `}>
               <p onClick={() => handleClick(0)}>

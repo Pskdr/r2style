@@ -142,12 +142,21 @@ h6{
     border-bottom: 2px solid black;
 }
 
+.menuName {
+    margin-top: 10px;
+    position: relative;
+    color: rgba(236, 226, 226, 0.5);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
 @media only screen and (max-width: 480px) {
 
     /* Styles for the tab container on phone screens */
     .r2style {
 
-        font-size: 20px;
+        font-size: 10px;
         margin-right: 10%;
     }
 
@@ -175,6 +184,11 @@ h6{
 
     .h5 {
         font-size: 13px;
+    }
+
+    .menuName {
+        font-size: 20px;
+        margin-left: 10px;
     }
     /* Styles for the tabs on phone screens */
 }

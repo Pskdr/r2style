@@ -31,14 +31,14 @@ function App() {
       title: 'Orden & Caos',
       imageUrl: curvas2,
       description: '',
-      price: '$35 USD',
+      price: '$50 USD',
       link: 'la camisa Orden y Caos',
     },
     {
       title: 'Fluye',
       imageUrl: curvas1,
       description: '',
-      price: '$35 USD',
+      price: '$50 USD',
       link: 'la camisa Fluye',
     },
 
@@ -46,7 +46,7 @@ function App() {
       title: 'Ondas',
       imageUrl: curvas3,
       description: '',
-      price: '$35 USD',
+      price: '$50 USD',
       link: 'la camisa Ondas',
     },
   ];
@@ -82,21 +82,21 @@ function App() {
       title: 'Encendedor',
       imageUrl: flores4,
       description: 'Encendedor coleccionable.',
-      price: '$10 USD',
+      price: '$25 USD',
       link: 'el encendedor coleccionable',
     },
     {
       title: 'Portavaso',
       imageUrl: portavaso,
       description: 'Porta vaso en resina.',
-      price: '$8 USD',
+      price: '$20 USD',
       link: 'el portavaso en resina',
     },
     {
       title: 'Portavaso hexagonal',
       imageUrl: portavasoexa,
       description: 'Porta vaso hexagonal en resina.',
-      price: '$8 USD',
+      price: '$20 USD',
       link: 'el portavaso hexagonal',
     },
     {
@@ -123,23 +123,23 @@ function App() {
       title: 'kit universitario',
       imageUrl: flores4,
       description: 'Encendedor + camisa.',
-      price: '$40 USD',
+      price: '$60 USD',
       link: 'la promocion: Encendedor más camisa',
     },
     {
       title: 'kit parceros',
       imageUrl: kitparceros,
       description: 'Dos camisas a elección.',
-      price: '$60 USD',
+      price: '$80 USD',
       link: 'la promocion: kit parceros',
     },
     {
-      title: 'kit 420',
+      title: 'Colección completa',
       imageUrl: kit420,
       description:
         'Tres camisas a elección + cenicero en resina + encendedor coleccionable.',
-      price: '$100 USD',
-      link: 'la promocion: kit 420',
+      price: '$150 USD',
+      link: 'la promocion: Colección completa',
     },
   ];
 
@@ -169,7 +169,7 @@ function App() {
     },
   ];
 
-  const [mostrar, setMostrar] = useState(1);
+  const [mostrar, setMostrar] = useState(0);
 
   const TAB_HERMETISMO = 0;
   const TAB_ARTE = 1;

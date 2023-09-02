@@ -31,14 +31,14 @@ function App() {
       title: 'Orden & Caos',
       imageUrl: curvas2,
       description: '',
-      price: '$50 USD',
+      price: '$45 USD',
       link: 'la camisa Orden y Caos',
     },
     {
       title: 'Fluye',
       imageUrl: curvas1,
       description: '',
-      price: '$50 USD',
+      price: '$45 USD',
       link: 'la camisa Fluye',
     },
 
@@ -46,7 +46,7 @@ function App() {
       title: 'Ondas',
       imageUrl: curvas3,
       description: '',
-      price: '$50 USD',
+      price: '$45 USD',
       link: 'la camisa Ondas',
     },
   ];
@@ -148,7 +148,7 @@ function App() {
       title: 'Mente ',
       imageUrl: menteAlma1,
       description: '',
-      price: '$35 USD',
+      price: '$45 USD',
       link: 'la camisa: Mente ',
     },
 
@@ -156,7 +156,7 @@ function App() {
       title: 'Cuerpo ',
       imageUrl: menteAlma2,
       description: '',
-      price: '$35 USD',
+      price: '$45 USD',
       link: 'la camisa: Cuerpo ',
     },
 
@@ -164,7 +164,7 @@ function App() {
       title: 'Alma ',
       imageUrl: menteAlma3,
       description: '',
-      price: '$35 USD',
+      price: '$45 USD',
       link: 'la camisa: Alma ',
     },
   ];

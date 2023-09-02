@@ -169,7 +169,7 @@ function App() {
     },
   ];
 
-  const [mostrar, setMostrar] = useState(1);
+  const [mostrar, setMostrar] = useState(0);
 
   const TAB_HERMETISMO = 0;
   const TAB_ARTE = 1;

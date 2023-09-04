@@ -1,0 +1,22 @@
+.cardView {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    max-height: 700px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .cardView{
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        padding: 40px;
+    }
+   
+
+}

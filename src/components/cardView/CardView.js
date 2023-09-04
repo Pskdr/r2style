@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ccardView.css';
 
 function CardView(props) {
   const onClick = (e) => {
@@ -12,17 +13,7 @@ function CardView(props) {
   };
 
   return (
-    <div
-      style={{
-        backgroundColor: '#fff',
-        borderRadius: '10px',
-        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)',
-        padding: '20px',
-        textAlign: 'center',
-        maxWidth: '500px',
-        maxHeight: '700px',
-      }}
-    >
+    <div className='cardView'>
       <h2
         style={{
           marginBottom: '10px',
